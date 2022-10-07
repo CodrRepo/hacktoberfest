@@ -24,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 40%;
+    min-width: 430px;
     padding: 3rem 5rem;
     border-radius: 192px;
 }
