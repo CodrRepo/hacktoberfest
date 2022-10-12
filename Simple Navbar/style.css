@@ -7,16 +7,18 @@
     font-family: poppins;
 }
 
-/* ----------------------- HEADER SECTION ------------------- */
-header{
+/* ----------------------- .container SECTION ------------------- */
+.container{
     display: flex;
+    margin: auto;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 5rem;
+    padding: 1rem 0rem;
+    max-width: 1368px;
 }
 
-header::before{
+.container::before{
     content: '';
     background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80');
     background-position: center;
@@ -34,6 +36,18 @@ header::before{
 #logo{
     font-size: 2rem;
     color: rgb(0, 157, 255);
+    /* transition: all 0.3s; */
+    animation-name: change-color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {color:rgb(0, 157, 255)}
+    25% {color:rgb(0, 255, 68)}
+    50% {color:rgb(255, 204, 0)}
+    75% {color:rgb(255, 0, 119)}
+    100% {color:rgb(255, 255, 255)}
 }
 
 /* ----------------------- NAVBAR SECTION------------------- */
@@ -41,12 +55,12 @@ header::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 43rem;
 
 }
 
 #navbar li{
     list-style-type: none;
+    padding: 0rem 1rem;
 }
 
 #navbar li a{
@@ -75,15 +89,30 @@ header::before{
     left: 5vw;
 }
 
+
+@keyframes spacing {
+    0%{letter-spacing: 0px;}
+    50%{letter-spacing: 10px;}
+    100%{letter-spacing: 0px;}
+}
+
 #home h1 #nxt{
     font-size: 4rem;
     color: rgb(0, 255, 68);
     margin-right: 0.3rem;
+    animation-name: spacing;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 #home h1 #gen{
     font-size: 4rem;
     color:rgb(0, 157, 255);
+    animation-name: spacing;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 #home h3{

@@ -1,0 +1,22 @@
+/* -------------------- CONTAINER SECTION -------------------- */
+.container{
+    min-height: 10rem;
+    max-height: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+/* ---------------- NAVBAR SECTION ------------------- */
+#navbar{
+    width: 90vw;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li{
+    padding: 0.5rem 1rem;
+}

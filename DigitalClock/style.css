@@ -30,6 +30,12 @@
     height: 10rem;
     border-radius: 12px;
     box-shadow: 3px 7px 16px -5px black;
+    cursor: default;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .sub-container:hover{
+    transform: scale(1.1);
 }
 /* ----------------------------- SPAN SECTION ----------------------------- */
 .container .sub-container span{

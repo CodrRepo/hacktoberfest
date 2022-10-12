@@ -1,0 +1,80 @@
+/* --------------------- CSS RESET --------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: poppins;
+}
+
+/* ---------------------- BODY SECTION -------------------- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --------------------- CONTAINER SECTION --------------------- */
+.container {
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 3rem 5rem;
+    border-radius: 192px;
+}
+
+.digit {
+    font-size: 5rem;
+    height: 6.2rem;
+    width: 7.2rem;
+    text-align: center;
+}
+
+.text {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* --------------------- SUB CONTAINER SECTION --------------------- */
+.sub-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seperater {
+    font-size: 4rem;
+    align-self: flex-start;
+    padding: 0.6rem 1rem;
+}
+/* --------------------- TIME SECTION --------------------- */
+#count-container{
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 123px;
+    position: relative;
+    left: 29px;
+}
+#count{
+    color: black;
+    font-size: 2.5rem;
+}
+
+/* -------------------------- BUTTON SECTION --------------------------- */
+.btn {
+    color: #ffc107;
+    background-color: black;
+    font-size: 2rem;
+    padding: 0.1rem 2rem;
+    margin: 1rem 0.3rem;
+    border-radius: 37px;
+    width: 11rem
+}
