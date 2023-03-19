@@ -7,12 +7,50 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="responsive.css">
     <title>Nav</title>
+    <style>
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2018/03/17/10/50/vision-3233648_960_720.jpg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .navbar{
+            background-color: rgb(121, 8, 227);
+            border-radius: 20px;
+        }
+
+        .navbar ul{
+            overflow: auto;
+        }
+
+        .navbar li{
+            float: left;
+            margin: 13px 20px;
+        }
+
+        .navbar li a{
+            padding: 3px 3px;
+            margin: 5px 5px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(255,235,205);
+        }
+    </style>
 </head>
 <body>
     <header>
+           <p id="logo">LOGO</p>
+         <nav class="navbar>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Our Products</a></li>
+                <li><a href="/">Contact Us</a></li>
+              </ul>
+          </nav>
+        <p class="primary-btn">Sign In</p>
         <div class="container">
             <p id="logo">LOGO</p>
-    
             <nav>
                 <ul id="navbar">
                     <li><a href="#">Home</a></li>
@@ -21,7 +59,6 @@
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
-    
             <p class="primary-btn">Sign In</p>
         </div>
     </header>
