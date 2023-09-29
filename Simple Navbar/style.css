@@ -60,7 +60,10 @@
     color: rgb(255, 255, 255);
   }
 }
-
+#text {
+  color: goldenrod;
+  font-size: 2rem;
+}
 /* ----------------------- NAVBAR SECTION------------------- */
 #navbar {
   display: flex;
@@ -132,14 +135,4 @@
 
 #home h3 {
   font-size: 1.5rem;
-}
-#p {
-  height: 50px;
-  width: fit-content;
-  top: 60px;
-  color: goldenrod;
-  margin-left: 3rem;
-}
-#sp {
-  font-size: 2rem;
 }
