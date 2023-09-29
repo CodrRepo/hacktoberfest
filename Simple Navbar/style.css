@@ -1,120 +1,145 @@
 /* ----------------------- CSS RESET ------------------- */
-*{
-    margin: 0px;
-    padding: 0px;
-    font-size: 10px;
-    box-sizing: border-box;
-    font-family: poppins;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+  box-sizing: border-box;
+  font-family: poppins;
 }
 
 /* ----------------------- .container SECTION ------------------- */
-.container{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    padding: 1rem 0rem;
-    max-width: 1368px;
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU7F7v_9vyMSNUY1iSLP7xDlAN9POKFndG_AL8dsAUIk2puAssmqLA_dyp4RhtAfHjGg8&usqp=CAU");
+  background-color: black;
+  padding: 1rem 0rem;
+  max-width: 1368px;
 }
 
-.container::before{
-    content: '';
-    background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
+.container::before {
+  content: "";
+  background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 /* ----------------------- LOGO SECTION------------------- */
-#logo{
-    font-size: 2rem;
-    color: rgb(0, 157, 255);
-    /* transition: all 0.3s; */
-    animation-name: change-color;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+#logo {
+  font-size: 2rem;
+  color: rgb(0, 157, 255);
+  /* transition: all 0.3s; */
+  animation-name: change-color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes change-color {
-    0% {color:rgb(0, 157, 255)}
-    25% {color:rgb(0, 255, 68)}
-    50% {color:rgb(255, 204, 0)}
-    75% {color:rgb(255, 0, 119)}
-    100% {color:rgb(255, 255, 255)}
+  0% {
+    color: rgb(0, 157, 255);
+  }
+  25% {
+    color: rgb(0, 255, 68);
+  }
+  50% {
+    color: rgb(255, 204, 0);
+  }
+  75% {
+    color: rgb(255, 0, 119);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
 }
 
 /* ----------------------- NAVBAR SECTION------------------- */
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#navbar li{
-    list-style-type: none;
-    padding: 0rem 1rem;
+#navbar li {
+  list-style-type: none;
+  padding: 0rem 1rem;
 }
 
-#navbar li a{
-    color: white;
-    font-size: 1.7rem;
-    text-decoration: none;
-    transition: all 0.3s;
+#navbar li a {
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+  transition: all 0.3s;
 }
-#navbar li a:hover{
-    color: rgb(0, 255, 68);
+#navbar li a:hover {
+  color: rgb(0, 255, 68);
 }
 
 /* ----------------------- SIGN IN SECTION ------------------- */
-.primary-btn{
-    color: rgb(0, 255, 68);
-    font-size: 1.8rem;
-    cursor: pointer;
+.primary-btn {
+  color: rgb(0, 255, 68);
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* ------------------------ HOME SECTION ------------------------ */
-#home{
-    color: white;
-    display: inline-block;
-    position: absolute;
-    top: 65vh;
-    left: 5vw;
+#home {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 65vh;
+  left: 5vw;
 }
-
 
 @keyframes spacing {
-    0%{letter-spacing: 0px;}
-    50%{letter-spacing: 10px;}
-    100%{letter-spacing: 0px;}
+  0% {
+    letter-spacing: 0px;
+  }
+  50% {
+    letter-spacing: 10px;
+  }
+  100% {
+    letter-spacing: 0px;
+  }
 }
 
-#home h1 #nxt{
-    font-size: 4rem;
-    color: rgb(0, 255, 68);
-    margin-right: 0.3rem;
-    animation-name: spacing;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+#home h1 #nxt {
+  font-size: 4rem;
+  color: rgb(0, 255, 68);
+  margin-right: 0.3rem;
+  animation-name: spacing;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
-#home h1 #gen{
-    font-size: 4rem;
-    color:rgb(0, 157, 255);
-    animation-name: spacing;
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
+#home h1 #gen {
+  font-size: 4rem;
+  color: rgb(0, 157, 255);
+  animation-name: spacing;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
 }
 
-#home h3{
-    font-size: 1.5rem;
+#home h3 {
+  font-size: 1.5rem;
+}
+#p {
+  height: 50px;
+  width: fit-content;
+  top: 60px;
+  color: goldenrod;
+  margin-left: 3rem;
+}
+#sp {
+  font-size: 2rem;
 }
